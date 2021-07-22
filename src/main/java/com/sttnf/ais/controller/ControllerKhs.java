@@ -109,7 +109,8 @@ public class ControllerKhs {
         return "Data sudah terhapus!";
                 
         }
-        
+    
+    @Secured({ROLE_ADMIN})     
     @PutMapping("/put")
 	public Khs update(@RequestBody Khs khs) throws Exception {
             
@@ -126,7 +127,7 @@ public class ControllerKhs {
 		return update;
 	}
         
-        
+    @Secured({ROLE_ADMIN, ROLE_USER})    
      //pangill khs keseluruhan   
     @GetMapping("/khsdetail")
      public List khs_detail (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
@@ -140,6 +141,7 @@ public class ControllerKhs {
   
     }
    
+     @Secured({ROLE_ADMIN, ROLE_USER})
      //Total SKS semester current
      @GetMapping("/totalsks")
      public String total_Sks (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
@@ -147,6 +149,7 @@ public class ControllerKhs {
         return "Total Sks = " +totalsks;
      }
      
+     @Secured({ROLE_ADMIN, ROLE_USER})
      //Total SKS keseluruhan
      @GetMapping("/totalsksall")
      public String total_Sksall (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs) throws Exception {
@@ -154,6 +157,7 @@ public class ControllerKhs {
         return "Total SKS yang telah ditempuh = " +totalsksall;
      }
 
+     @Secured({ROLE_ADMIN, ROLE_USER})
      //Bobot X Sks
       @GetMapping("/bobotxsks")
      public String bobotXsks (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
@@ -161,6 +165,7 @@ public class ControllerKhs {
         return "Bobot X SKS = " +totalbobotnilai;
      }
      
+     @Secured({ROLE_ADMIN, ROLE_USER})
      //IPS mahasiswa
      @GetMapping("/ips")
      public String ips (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
