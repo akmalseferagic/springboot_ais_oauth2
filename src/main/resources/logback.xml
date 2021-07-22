@@ -8,9 +8,9 @@
 
     <appender name="TIME_BASED_FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>devglan.log</file>
+        <file>khsais.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">aaj
-            <fileNamePattern>devglan.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>khsais.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
 
