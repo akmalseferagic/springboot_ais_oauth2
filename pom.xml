@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+        <groupId>com.sttnf.ais</groupId>
+        <artifactId>sttnf.ais-oauth2</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <packaging>jar</packaging>
+                
+	<description>API Webservice for AIS KH STT NF</description>
+            
+        <name>sttnf.ais-oauth2</name>  
+        <url>http://maven.apache.org</url>
+        
+        <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.0.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+
+
+	<properties>
+		<java.version>1.8</java.version>
+          <start-class>com.sttnf.ais.App</start-class>
+          <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        </properties>
+
+	<dependencies>
+          
+                 <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-devtools</artifactId>
+                        <scope>runtime</scope>
+                 </dependency>
+                
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+            
+                 <dependency>
+                        <groupId>org.apache.tomcat.embed</groupId>
+                        <artifactId>tomcat-embed-jasper</artifactId>
+                        <scope>provided</scope>
+                </dependency>
+                
+                <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-tomcat</artifactId>
+                </dependency>
+            
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+                
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>2.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-jwt</artifactId>
+			<version>1.0.9.RELEASE</version>
+		</dependency>
+                
+                 <dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+                
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	        
+	        <dependency>
+                    <groupId>io.springfox</groupId>
+                    <artifactId>springfox-swagger2</artifactId>
+                    <version>2.9.2</version>
+                </dependency>
+      
+                <dependency>
+			<!-- Generate beautiful documentation from a Swagger-compliant API. -->
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+                
+                <dependency>
+                        <groupId>io.springfox</groupId>
+                        <artifactId>springfox-bean-validators</artifactId>
+                        <version>2.9.2</version>
+                </dependency>
+                
+	</dependencies>
+
+
+
+	<build>
+		<plugins>
+			<plugin>
+		  		<groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-maven-plugin</artifactId>
+			    <version>1.5.9.RELEASE</version>
+		  	</plugin>
+	  		
+		  	<plugin>
+		  		<groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-compiler-plugin</artifactId>
+                            
+			    <configuration>
+			    	<source>1.8</source>
+			    	<target>1.8</target>
+			    </configuration>
+                        </plugin>
+		</plugins>
+	</build>
+
+</project>
