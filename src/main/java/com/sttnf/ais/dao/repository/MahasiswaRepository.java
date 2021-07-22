@@ -19,6 +19,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 public interface MahasiswaRepository extends PagingAndSortingRepository<Mahasiswa, String> {
     
     @Transactional
+    @Modifying(clearAutomatically = true)
     @Query(nativeQuery = true, value = "delete from Mahasiswa m where m.nim_mhs = :nim_mhs")
     public void deleteByNim(String nim_mhs);
     

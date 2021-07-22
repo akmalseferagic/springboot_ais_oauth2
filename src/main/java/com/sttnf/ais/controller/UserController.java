@@ -42,14 +42,14 @@ public class UserController {
     }
 
     @Secured({ROLE_ADMIN, ROLE_USER})
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "{id}")
     public ApiResponse getUser(@PathVariable long id){
         log.info(String.format("received request to update user %s", authenticationFacadeService.getAuthentication().getPrincipal()));
         return new ApiResponse(HttpStatus.OK, SUCCESS, userService.findOne(id));
     }
 
     @Secured({ROLE_ADMIN})
-    @DeleteMapping(value = "/{id}")
+    @DeleteMapping(value = "{id}")
     public void delete(@PathVariable(value = "id") Long id){
         log.info(String.format("received request to delete user %s", authenticationFacadeService.getAuthentication().getPrincipal()));
         userService.delete(id);

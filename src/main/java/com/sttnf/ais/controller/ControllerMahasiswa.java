@@ -65,7 +65,7 @@ public class ControllerMahasiswa {
     
     @Secured({ROLE_ADMIN})    
     @DeleteMapping("/delete")
-	public String Mahasiswa (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, Mahasiswa mahasiswa) throws Exception{
+	public String Mahasiswa (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs) throws Exception{
 		mahasiswaDao.deleteByNim(nim_mhs);
                 return "data telah dihapus!.";
 	}

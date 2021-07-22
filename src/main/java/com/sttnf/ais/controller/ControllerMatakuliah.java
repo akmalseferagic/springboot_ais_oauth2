@@ -63,7 +63,7 @@ public class ControllerMatakuliah {
 	
         @Secured({ROLE_ADMIN})
 	@DeleteMapping("/delete")
-	public String Matakuliah(@RequestParam(value="kode_mk", defaultValue="") String kode_mk, Matakuliah matakuliah) throws Exception{
+	public String Matakuliah(@RequestParam(value="kode_mk", defaultValue="") String kode_mk) throws Exception{
 		matakuliahDao.deleteByKodeMk(kode_mk);
         return "Data telah dihapus!.";
 	}
