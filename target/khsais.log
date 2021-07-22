@@ -1,0 +1,170 @@
+2021-07-22 15:26:13 INFO  com.sttnf.ais.App - Starting App v0.0.1-SNAPSHOT on MacBook-Air-3.local with PID 9416 (/Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/target/sttnf.ais-oauth2-0.0.1-SNAPSHOT.jar started by techinasia888 in /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/target)
+2021-07-22 15:26:13 INFO  com.sttnf.ais.App - No active profile set, falling back to default profiles: default
+2021-07-22 15:26:14 INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@532760d8: startup date [Thu Jul 22 15:26:14 WIB 2021]; root of context hierarchy
+2021-07-22 15:26:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$34e6b341] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:29 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-07-22 15:26:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$904eee42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$28fcb67c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@305b7c14' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$4dd1592e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:30 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-22 15:26:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-07-22 15:26:32 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-22 15:26:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-22 15:26:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2021-07-22 15:26:33 INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/techinasia888/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-07-22 15:26:36 INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-07-22 15:26:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-22 15:26:36 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 22589 ms
+2021-07-22 15:26:38 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-22 15:26:38 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-22 15:26:38 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-22 15:26:38 INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-22 15:26:38 INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-22 15:26:38 INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2021-07-22 15:26:38 INFO  o.s.b.w.s.ServletRegistrationBean - Servlet messageDispatcherServlet mapped to [/services/*]
+2021-07-22 15:26:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-22 15:26:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-22 15:26:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-22 15:26:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-22 15:26:44 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.14.Final}
+2021-07-22 15:26:44 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2021-07-22 15:26:45 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-22 15:26:47 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-07-22 15:26:48 INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:858)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.sttnf.ais.App.main(App.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+	at org.postgresql.Driver.notImplemented(Driver.java:683)
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1252)
+	... 52 common frames omitted
+2021-07-22 15:26:48 INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@31add175
+2021-07-22 15:26:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-22 15:27:02 INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2021-07-22 15:27:05 WARN  o.s.s.o.p.t.s.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/authorize]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map<java.lang.String, java.lang.Object>,java.util.Map<java.lang.String, java.lang.String>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/authorize],methods=[POST],params=[user_oauth_approval]}" onto public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map<java.lang.String, java.lang.String>,java.util.Map<java.lang.String, ?>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/token],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/token],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.getAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/check_token]}" onto public java.util.Map<java.lang.String, ?> org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint.checkToken(java.lang.String)
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/confirm_access]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/error]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint.handleError(javax.servlet.http.HttpServletRequest)
+2021-07-22 15:27:06 INFO  o.s.s.o.p.e.FrameworkEndpointHandlerMapping - Mapped "{[/oauth/token_key],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint.getKey(java.security.Principal)
+2021-07-22 15:27:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/put],methods=[PUT]}" onto public com.sttnf.ais.model.Khs com.sttnf.ais.controller.ControllerKhs.update(com.sttnf.ais.model.Khs) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/ips],methods=[GET]}" onto public java.lang.String com.sttnf.ais.controller.ControllerKhs.ips(java.lang.String,int) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/getall],methods=[GET]}" onto public java.util.List<com.sttnf.ais.model.Khs> com.sttnf.ais.controller.ControllerKhs.getlist() throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/delete],methods=[DELETE]}" onto public java.lang.String com.sttnf.ais.controller.ControllerKhs.Khs(java.lang.String,java.lang.String) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/get],methods=[GET]}" onto public java.lang.String com.sttnf.ais.controller.ControllerKhs.viewKhs(java.lang.String)
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/post],methods=[POST]}" onto public com.sttnf.ais.model.Khs com.sttnf.ais.controller.ControllerKhs.postKhs(com.sttnf.ais.model.Khs) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/totalsks],methods=[GET]}" onto public java.lang.String com.sttnf.ais.controller.ControllerKhs.total_Sks(java.lang.String,int) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/totalsksall],methods=[GET]}" onto public java.lang.String com.sttnf.ais.controller.ControllerKhs.total_Sksall(java.lang.String) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/bobotxsks],methods=[GET]}" onto public java.lang.String com.sttnf.ais.controller.ControllerKhs.bobotXsks(java.lang.String,int) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/find],methods=[GET]}" onto public java.util.List<com.sttnf.ais.model.Khs> com.sttnf.ais.controller.ControllerKhs.findDetailKhs(java.lang.String,int) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Khs/khsdetail],methods=[GET]}" onto public java.util.List com.sttnf.ais.controller.ControllerKhs.khs_detail(java.lang.String,int) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Mahasiswa/put],methods=[PUT]}" onto public com.sttnf.ais.model.Mahasiswa com.sttnf.ais.controller.ControllerMahasiswa.update(com.sttnf.ais.model.Mahasiswa) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Mahasiswa/getall],methods=[GET]}" onto public java.util.List<com.sttnf.ais.model.Mahasiswa> com.sttnf.ais.controller.ControllerMahasiswa.getlist() throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Mahasiswa/post],methods=[POST]}" onto public com.sttnf.ais.model.Mahasiswa com.sttnf.ais.controller.ControllerMahasiswa.postMahasiswa(com.sttnf.ais.model.Mahasiswa) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Mahasiswa/get],methods=[GET]}" onto public java.util.List com.sttnf.ais.controller.ControllerMahasiswa.viewMahasiswa(java.lang.String) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Mahasiswa/delete],methods=[DELETE]}" onto public java.lang.String com.sttnf.ais.controller.ControllerMahasiswa.Mahasiswa(java.lang.String,com.sttnf.ais.model.Mahasiswa) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[DELETE]}" onto public void com.sttnf.ais.controller.UserController.delete(java.lang.Long)
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public com.sttnf.ais.dto.ApiResponse com.sttnf.ais.controller.UserController.create(com.sttnf.ais.dto.UserDto)
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public com.sttnf.ais.dto.ApiResponse com.sttnf.ais.controller.UserController.listUser()
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/{id}],methods=[GET]}" onto public com.sttnf.ais.dto.ApiResponse com.sttnf.ais.controller.UserController.getUser(long)
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Matakuliah/put],methods=[PUT]}" onto public com.sttnf.ais.model.Matakuliah com.sttnf.ais.controller.ControllerMatakuliah.update(com.sttnf.ais.model.Matakuliah) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Matakuliah/getall],methods=[GET]}" onto public java.util.List<com.sttnf.ais.model.Matakuliah> com.sttnf.ais.controller.ControllerMatakuliah.getlist() throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Matakuliah/get],methods=[GET]}" onto public java.util.List<com.sttnf.ais.model.Matakuliah> com.sttnf.ais.controller.ControllerMatakuliah.viewMatakuliah(java.lang.String) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Matakuliah/post],methods=[POST]}" onto public com.sttnf.ais.model.Matakuliah com.sttnf.ais.controller.ControllerMatakuliah.postMatakuliah(com.sttnf.ais.model.Matakuliah) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Matakuliah/delete],methods=[DELETE]}" onto public java.lang.String com.sttnf.ais.controller.ControllerMatakuliah.Matakuliah(java.lang.String,com.sttnf.ais.model.Matakuliah) throws java.lang.Exception
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-22 15:27:06 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-22 15:27:12 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25bcd0c7, org.springframework.security.web.context.SecurityContextPersistenceFilter@495083a0, org.springframework.security.web.header.HeaderWriterFilter@5f59185e, org.springframework.security.web.authentication.logout.LogoutFilter@6c345c5f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d9bec4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28a0fd6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@841e575, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32cb636e, org.springframework.security.web.session.SessionManagementFilter@47da3952, org.springframework.security.web.access.ExceptionTranslationFilter@60b71e8f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d5d9e5]
+2021-07-22 15:27:12 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@61078690, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cb3ec38, org.springframework.security.web.context.SecurityContextPersistenceFilter@593e824f, org.springframework.security.web.header.HeaderWriterFilter@3954d008, org.springframework.security.web.authentication.logout.LogoutFilter@64bc21ac, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@5d25e6bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72ccd81a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d8792db, org.springframework.security.web.session.SessionManagementFilter@2f94c4db, org.springframework.security.web.access.ExceptionTranslationFilter@591e58fa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f69d591]
+2021-07-22 15:27:12 INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15a902e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a1d593e, org.springframework.security.web.header.HeaderWriterFilter@2f7a7219, org.springframework.security.web.authentication.logout.LogoutFilter@7859e786, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a8a60bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@361c294e, org.springframework.security.web.session.SessionManagementFilter@669513d8, org.springframework.security.web.access.ExceptionTranslationFilter@2cab9998, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5118388b]
+2021-07-22 15:27:13 INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-22 15:27:15 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@532760d8: startup date [Thu Jul 22 15:26:14 WIB 2021]; root of context hierarchy
+2021-07-22 15:27:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-22 15:27:15 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-22 15:27:16 INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-22 15:27:18 INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2021-07-22 15:27:18 INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-22 15:27:18 INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-22 15:27:18 INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2021-07-22 15:27:18 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-07-22 15:27:18 INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-07-22 15:27:18 INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-07-22 15:27:20 INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getlistUsingGET_1
+2021-07-22 15:27:20 INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-07-22 15:27:20 INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getlistUsingGET_2
+2021-07-22 15:27:20 INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-07-22 15:27:20 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-07-22 15:27:20 INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-07-22 15:27:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-22 15:27:20 INFO  com.sttnf.ais.App - Started App in 69.15 seconds (JVM running for 71.602)
+2021-07-22 15:27:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-22 15:27:42 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-22 15:27:43 INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 689 ms
+2021-07-22 15:33:28 INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@532760d8: startup date [Thu Jul 22 15:26:14 WIB 2021]; root of context hierarchy
+2021-07-22 15:33:28 INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2021-07-22 15:33:28 INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2021-07-22 15:33:28 INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2021-07-22 15:33:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-22 15:33:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-22 15:33:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
