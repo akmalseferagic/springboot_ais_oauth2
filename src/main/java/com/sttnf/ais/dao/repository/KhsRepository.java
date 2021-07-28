@@ -22,16 +22,16 @@ import org.springframework.data.repository.query.Param;
 public interface KhsRepository extends PagingAndSortingRepository<Khs, Integer> {
 
     //dipakai
-    @Query("select k.id_khs, k.thajaran, m.nama_mk, m.sks_mk, k.nilai, k.jumlahnilai from Matakuliah m, Khs k where k.kode_mk = m.kode_mk and k.thajaran = :thajaran and nim_mhs = :nim_mhs order by nim_mhs, thajaran")
-    public List<Khs> findKhs(@Param("nim_mhs") String nim_mhs, @Param("thajaran") int thajaran);
+    @Query("select k.id_khs, m.kode_mk, m.nama_mk, m.sks_mk, k.nilai, k.jumlahnilai from Matakuliah m, Khs k where k.kode_mk = m.kode_mk and k.tahun_ajaran = :tahun_ajaran and nim_mhs = :nim_mhs order by nim_mhs, tahun_ajaran")
+    public List<Khs> findKhs(@Param("nim_mhs") String nim_mhs, @Param("tahun_ajaran") int tahun_ajaran);
     
       //dipakai
-    @Query(nativeQuery = true, value = "select sum(k.jumlahnilai) from Khs k where k.nim_mhs = :nim_mhs and k.thajaran = :thajaran")
-   public Float getTotaljumnilai (@Param("nim_mhs") String nim_mhs, @Param("thajaran") int thajaran);
+    @Query(nativeQuery = true, value = "select sum(k.jumlahnilai) from Khs k where k.nim_mhs = :nim_mhs and k.tahun_ajaran = :tahun_ajaran")
+   public Float getTotaljumnilai (@Param("nim_mhs") String nim_mhs, @Param("tahun_ajaran") int tahun_ajaran);
     
    //dipakai
-    @Query(nativeQuery = true, value = "select sum(m.sks_mk) from Matakuliah m inner join Khs k on k.kode_mk = m.kode_mk where k.nim_mhs = :nim_mhs and k.thajaran = :thajaran")
-   public Integer getTotalSks (@Param("nim_mhs") String nim_mhs, @Param("thajaran") int thajaran);
+    @Query(nativeQuery = true, value = "select sum(m.sks_mk) from Matakuliah m inner join Khs k on k.kode_mk = m.kode_mk where k.nim_mhs = :nim_mhs and k.tahun_ajaran = :tahun_ajaran")
+   public Integer getTotalSks (@Param("nim_mhs") String nim_mhs, @Param("tahun_ajaran") int tahun_ajaran);
   
     //dipakai
     @Query("select m.sks_mk from Matakuliah m where m.kode_mk = :kode_mk")

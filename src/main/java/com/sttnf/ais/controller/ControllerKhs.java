@@ -11,6 +11,7 @@ import com.sttnf.ais.dao.KhsDao;
 import com.sttnf.ais.dao.repository.KhsRepository;
 import com.sttnf.ais.model.Khs;
 import com.sttnf.ais.service.AuthenticationFacadeService;
+import java.security.Principal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -80,8 +81,8 @@ public class ControllerKhs {
     @Secured({ROLE_ADMIN, ROLE_USER})    
    //panggil khs  saja
    @GetMapping("/find")
-    public List<Khs> findDetailKhs (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception{
-		List<Khs> list = khsDao.findKhs(nim_mhs, thajaran);
+    public List<Khs> findDetailKhs (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="tahun_ajaran", defaultValue="") int tahun_ajaran ) throws Exception{
+		List<Khs> list = khsDao.findKhs(nim_mhs, tahun_ajaran);
             return list;
 	} 
 
@@ -130,22 +131,23 @@ public class ControllerKhs {
     @Secured({ROLE_ADMIN, ROLE_USER})    
      //pangill khs keseluruhan   
     @GetMapping("/khsdetail")
-     public List khs_detail (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
-     List<Khs> list = khsDao.findKhs(nim_mhs, thajaran);
-     Float totalbobotnilai = khsDao.getTotaljumnilai(nim_mhs, thajaran);
-     Integer totalsks = khsDao.getTotalSks(nim_mhs, thajaran);
+     public List khs_detail (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="tahun_ajaran", defaultValue="") int tahun_ajaran, Principal principal) throws Exception {
+     // test if userId is current principal or principal is an ADMIN
+         
+     List<Khs> list = khsDao.findKhs(nim_mhs, tahun_ajaran);
+     Float totalbobotnilai = khsDao.getTotaljumnilai(nim_mhs, tahun_ajaran);
+     Integer totalsks = khsDao.getTotalSks(nim_mhs, tahun_ajaran);
      Integer totalsksall = khsDao.getTotalSksMhs(nim_mhs);
      Float ips_mhs = totalbobotnilai/totalsks;
         return Arrays.asList(list,"'Bobot X nilai' : " +totalbobotnilai, "'Total SKS' : " + totalsks, "Total SKS yang telah ditempuh = " +totalsksall, "Indeks Per Semester = " +ips_mhs);
-        
-  
+
     }
    
      @Secured({ROLE_ADMIN, ROLE_USER})
      //Total SKS semester current
      @GetMapping("/totalsks")
-     public String total_Sks (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
-         Integer totalsks = khsDao.getTotalSks(nim_mhs, thajaran);
+     public String total_Sks (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="tahun_ajaran", defaultValue="") int tahun_ajaran ) throws Exception {
+         Integer totalsks = khsDao.getTotalSks(nim_mhs, tahun_ajaran);
         return "Total Sks = " +totalsks;
      }
      
@@ -160,18 +162,18 @@ public class ControllerKhs {
      @Secured({ROLE_ADMIN, ROLE_USER})
      //Bobot X Sks
       @GetMapping("/bobotxsks")
-     public String bobotXsks (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
-         Float totalbobotnilai = khsDao.getTotaljumnilai(nim_mhs, thajaran);
+     public String bobotXsks (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="tahun_ajaran", defaultValue="") int tahun_ajaran ) throws Exception {
+         Float totalbobotnilai = khsDao.getTotaljumnilai(nim_mhs, tahun_ajaran);
         return "Bobot X SKS = " +totalbobotnilai;
      }
      
      @Secured({ROLE_ADMIN, ROLE_USER})
      //IPS mahasiswa
      @GetMapping("/ips")
-     public String ips (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="thajaran", defaultValue="") int thajaran ) throws Exception {
+     public String ips (@RequestParam(value="nim_mhs", defaultValue="") String nim_mhs, @RequestParam(value="tahun_ajaran", defaultValue="") int tahun_ajaran ) throws Exception {
          
-         Integer totalsks = khsDao.getTotalSks(nim_mhs, thajaran);
-         Float totalbobotnilai = khsDao.getTotaljumnilai(nim_mhs, thajaran);
+         Integer totalsks = khsDao.getTotalSks(nim_mhs, tahun_ajaran);
+         Float totalbobotnilai = khsDao.getTotaljumnilai(nim_mhs, tahun_ajaran);
          Float ips_mhs = totalbobotnilai /totalsks;
          
         return "Indeks Per Semester = " +ips_mhs;

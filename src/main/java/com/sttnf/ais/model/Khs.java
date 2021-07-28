@@ -33,10 +33,7 @@ public class Khs {
     private String kode_mk;
     
     @Column
-    private String smt_khs;
-    
-    @Column
-    private int thajaran;
+    private int tahun_ajaran;
     
     @Column
     private Float nilai;
@@ -48,11 +45,10 @@ public class Khs {
     
     public Khs ( ){ }
     
-    public Khs (String nim_mhs, String kode_mk, String smt_khs, int thajaran, Float nilai, Float jumlahnilai){
+    public Khs (String nim_mhs, String kode_mk, int tahun_ajaran, Float nilai, Float jumlahnilai){
         this.nim_mhs = nim_mhs;
         this.kode_mk = kode_mk;
-        this.smt_khs = smt_khs;
-        this.thajaran = thajaran;
+        this.tahun_ajaran = tahun_ajaran;
         this.nilai = nilai;
         this.jumlahnilai = jumlahnilai;
         
@@ -82,20 +78,12 @@ public class Khs {
         this.kode_mk = kode_mk;
     }
 
-    public String getSmt_khs() {
-        return smt_khs;
+    public int getTahun_ajaran() {
+        return tahun_ajaran;
     }
 
-    public void setSmt_khs(String smt_khs) {
-        this.smt_khs = smt_khs;
-    }
-
-    public int getThajaran() {
-        return thajaran;
-    }
-
-    public void setThajaran(int thajaran) {
-        this.thajaran = thajaran;
+    public void setTahun_ajaran(int tahun_ajaran) {
+        this.tahun_ajaran = tahun_ajaran;
     }
 
     public Float getNilai() {

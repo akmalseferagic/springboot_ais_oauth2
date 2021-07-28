@@ -20,10 +20,10 @@ public interface KhsDao {
         Khs getById (int id) throws Exception;
         Integer getSks (String kode_mk)throws Exception;
         List<Khs> getList() throws Exception;
-        Float getTotaljumnilai (String nim_mhs, int thajaran) throws Exception;
-        Integer getTotalSks (String nim_mhs, int thajaran) throws Exception;
+        Float getTotaljumnilai (String nim_mhs, int tahun_ajaran) throws Exception;
+        Integer getTotalSks (String nim_mhs, int tahun_ajaran) throws Exception;
         Integer getTotalSksMhs (String nim_mhs) throws Exception;
-        List<Khs> findKhs (String nim_mhs, int thajaran) throws Exception;
+        List<Khs> findKhs (String nim_mhs, int tahun_ajaran) throws Exception;
        
         
         //Save

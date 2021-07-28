@@ -13,6 +13,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.annotation.Resource;
+import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Component;
 
 @Configuration
 @EnableWebSecurity

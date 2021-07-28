@@ -1,4 +1,5 @@
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/model/RoleType.java
+/Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/impl/TahunajaranDaoImpl.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/model/Role.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dto/UserDto.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/KhsDao.java
@@ -9,9 +10,11 @@
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/service/impl/AuthenticationFacadeServiceImpl.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/config/DaoSpringConfig.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/model/Mahasiswa.java
+/Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/controller/ControllerTahunajaran.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/repository/KhsRepository.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/App.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/config/AuthorizationServerConfig.java
+/Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/TahunajaranDao.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/service/impl/UserServiceImpl.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dto/ApiResponse.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/config/ResourceServerConfig.java
@@ -23,11 +26,13 @@
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/controller/ControllerKhs.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/service/UserService.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/controller/ControllerMatakuliah.java
+/Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/model/Tahunajaran.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/controller/ControllerMahasiswa.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/MatakuliahDao.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/service/AuthenticationFacadeService.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/MahasiswaDao.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/RoleDao.java
+/Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/repository/TahunajaranRepository.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/model/Khs.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/dao/repository/MahasiswaRepository.java
 /Users/techinasia888/Desktop/Tugas Akhir/SPRING/sttnf.ais_oauth2/src/main/java/com/sttnf/ais/model/Matakuliah.java

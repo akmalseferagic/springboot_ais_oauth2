@@ -26,15 +26,26 @@ public class Mahasiswa {
         private String prodi_mhs;
         @Column
 	private String nama_mhs;
+        @Column
+        private Long id_users;
   
         
         public Mahasiswa() {	} //constructor 
 
-        public Mahasiswa(String nim_mahasiswa, String prodi_mhs, String nama_mhs) {
+        public Mahasiswa(String nim_mahasiswa, String prodi_mhs, String nama_mhs,long id_users) {
 		this.prodi_mhs = prodi_mhs;
                 this.nama_mhs = nama_mhs;
+                this.id_users = id_users;
 
 	}
+
+    public Long getId_users() {
+        return id_users;
+    }
+
+    public void setId_users(Long id_users) {
+        this.id_users = id_users;
+    }
 
     public String getNim_mhs() {
         return nim_mhs;

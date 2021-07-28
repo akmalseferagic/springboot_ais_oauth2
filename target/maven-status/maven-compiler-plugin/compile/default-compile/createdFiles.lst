@@ -3,13 +3,17 @@ com/sttnf/ais/service/impl/AuthenticationFacadeServiceImpl.class
 com/sttnf/ais/controller/UserController.class
 com/sttnf/ais/model/Matakuliah.class
 com/sttnf/ais/config/DaoSpringConfig.class
+com/sttnf/ais/dao/TahunajaranDao.class
 com/sttnf/ais/dao/impl/BaseImpl.class
+com/sttnf/ais/dao/repository/TahunajaranRepository.class
 com/sttnf/ais/dao/MatakuliahDao.class
 com/sttnf/ais/dao/MahasiswaDao.class
 com/sttnf/ais/service/UserService.class
+com/sttnf/ais/dao/impl/TahunajaranDaoImpl.class
 com/sttnf/ais/model/Khs.class
 com/sttnf/ais/config/AuthorizationServerConfig.class
 com/sttnf/ais/model/User.class
+com/sttnf/ais/controller/ControllerTahunajaran.class
 com/sttnf/ais/dao/impl/MahasiswaDaoImpl.class
 com/sttnf/ais/dao/impl/KhsDaoImpl.class
 com/sttnf/ais/model/RoleType.class

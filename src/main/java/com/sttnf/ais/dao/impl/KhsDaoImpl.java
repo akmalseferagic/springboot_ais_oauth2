@@ -40,9 +40,9 @@ public class KhsDaoImpl extends BaseImpl implements KhsDao {
     }
     
     @Override
-    public List findKhs(String nim_mhs, int thajaran) throws Exception {
-        repository.findKhs(nim_mhs, thajaran);
-        return repository.findKhs(nim_mhs, thajaran);
+    public List findKhs(String nim_mhs, int tahun_ajaran) throws Exception {
+        repository.findKhs(nim_mhs, tahun_ajaran);
+        return repository.findKhs(nim_mhs, tahun_ajaran);
     }
 
     @Override
@@ -57,15 +57,15 @@ public class KhsDaoImpl extends BaseImpl implements KhsDao {
   
     
      @Override
-    public Float getTotaljumnilai(String nim_mhs, int thajaran) throws Exception {
-       repository.getTotaljumnilai(nim_mhs, thajaran);
-        return repository.getTotaljumnilai(nim_mhs, thajaran);
+    public Float getTotaljumnilai(String nim_mhs, int tahun_ajaran) throws Exception {
+       repository.getTotaljumnilai(nim_mhs, tahun_ajaran);
+        return repository.getTotaljumnilai(nim_mhs, tahun_ajaran);
     }
 
     @Override
-    public Integer getTotalSks(String nim_mhs, int thajaran) throws Exception {
-        repository.getTotalSks(nim_mhs, thajaran);
-        return repository.getTotalSks(nim_mhs, thajaran);
+    public Integer getTotalSks(String nim_mhs, int tahun_ajaran) throws Exception {
+        repository.getTotalSks(nim_mhs, tahun_ajaran);
+        return repository.getTotalSks(nim_mhs, tahun_ajaran);
     }
     
     

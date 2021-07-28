@@ -9,9 +9,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import com.sttnf.ais.dao.MahasiswaDao;
 import com.sttnf.ais.dao.MatakuliahDao;
+import com.sttnf.ais.dao.TahunajaranDao;
 import com.sttnf.ais.dao.impl.KhsDaoImpl;
 import com.sttnf.ais.dao.impl.MahasiswaDaoImpl;
 import com.sttnf.ais.dao.impl.MatakuliahDaoImpl;
+import com.sttnf.ais.dao.impl.TahunajaranDaoImpl;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
@@ -35,6 +37,11 @@ public class DaoSpringConfig {
         @Bean
 	public KhsDao khsDao() {
 		return new KhsDaoImpl();
+	}
+        
+        @Bean
+	public TahunajaranDao tahunajaranDao() {
+		return new TahunajaranDaoImpl();
 	}
         
         
